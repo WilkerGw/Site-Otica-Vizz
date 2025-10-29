@@ -175,7 +175,7 @@ export function HeroSection() {
             <div className="flex flex-col items-start text-left text-white">
               <span className="leading-tight">Visite nossa Loja Virtual</span>
               <small className="text-xs font-normal opacity-90">
-                Compre sem sair de casa!
+                Compre sem sair de casa.
               </small>
             </div>
           </Link>
