@@ -184,7 +184,7 @@ export function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-0 lg:bottom-1/4 lg:-translate-y-1/4 rounded-lg  lg:right-4 w-[90%] lg:w-[30rem] h-[17rem] mb-6 lg:mb-0 z-10">
+      <div className="absolute bottom-0 lg:bottom-1/4 lg:-translate-y-1/4 rounded-lg  lg:right-4 w-[90%] lg:w-[30rem] h-[19rem] mb-6 lg:mb-0 z-10">
         <p><PromotionalCarousel/></p>
       </div>
     </section>
