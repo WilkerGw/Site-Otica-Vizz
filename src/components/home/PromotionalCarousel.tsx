@@ -87,7 +87,7 @@ const PromotionalCarousel: React.FC = () => {
   const transformValue = `translateX(-${currentIndex * 100}%)`;
 
   return (
-    <div className="relative w-full h-[17rem] overflow-hidden shadow-lg rounded-lg  bg-gray-950/80 backdrop-blur-[1px]">
+    <div className="relative w-full h-[17rem] overflow-hidden rounded-lg z-9 lg:my-20">
       {/* Container Principal do Carrossel (Visor) */}
       <div className="flex">
         {/*
