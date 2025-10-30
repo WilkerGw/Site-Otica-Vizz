@@ -30,18 +30,18 @@ const PROMOTIONS: Promotion[] = [
     price: "R$ 399,99",
   },
   {
-    id: 3,
-    imageUrl: "/images/banner/3.Webp",
-    titleText: "Lentes com Filtro de Luz Azul",
-    aPartirDe: "a partir de",
-    price: "R$ 299,99",
-  },
-  {
     id: 4,
     imageUrl: "/images/banner/4.Webp",
     titleText: "Lentes Fotossensíveis",
     aPartirDe: "a partir de",
     price: "R$ 799,99",
+  },
+  {
+    id: 3,
+    imageUrl: "/images/banner/3.Webp",
+    titleText: "Lentes com Filtro de Luz Azul",
+    aPartirDe: "a partir de",
+    price: "R$ 299,99",
   },
   {
     id: 5,
