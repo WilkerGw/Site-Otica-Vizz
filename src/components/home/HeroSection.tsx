@@ -14,6 +14,7 @@ import {
 import { motion } from "framer-motion";
 import PromotionalCarousel from "./PromotionalCarousel";
 import Filtro from "./Filtro";
+import FeatureBar from "./FeatureBar";
 
 // 1. Array com os caminhos das imagens
 const carouselImages = ["/images/1.Webp", "/images/2.Webp", "/images/3.Webp"];
@@ -187,6 +188,8 @@ export function HeroSection() {
       <div className="absolute bottom-0 lg:bottom-1/4 lg:-translate-y-1/4 rounded-lg  lg:right-4 w-[90%] lg:w-[30rem] h-[19rem] mb-6 lg:mb-0 z-10">
         <p><PromotionalCarousel/></p>
       </div>
+
+      <FeatureBar/>
     </section>
   );
 }

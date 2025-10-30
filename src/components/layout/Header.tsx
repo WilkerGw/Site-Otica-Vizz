@@ -120,11 +120,6 @@ const menuItems = [
     },
   },
   {
-    label: "Agendamento",
-    href: "/agendamento",
-    isFeatured: true,
-  },
-  {
     label: "Loja Virtual",
     href: "https://oticasvizz.lojavirtualnuvem.com.br/",
     target: "_blank",

@@ -27,7 +27,7 @@ const featureItemsData: FeatureItemProps[] = [
 
 const FeatureBar: React.FC = () => {
   return (
-    <nav className="w-full bg-gray-500 text-gray-200 p-4">
+    <nav className="absolute w-full bg-gray-950/50 backdrop-blur-[1px] text-gray-200 p-4 z-10 bottom-0">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-around items-center gap-4">
         {featureItemsData.map((item, index) => (
           <div key={index} className="flex items-center gap-2">
