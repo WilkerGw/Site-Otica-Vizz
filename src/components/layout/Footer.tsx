@@ -21,14 +21,14 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-white text-gray-500 pt-16">
+    <footer className="bg-black text-white pt-16">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-12 text-center md:text-left">
           
           <div className="flex flex-col items-center md:items-start">
             <Link href="#home" className="mb-4">
               <Image
-                src="/images/logo-cinza.png"
+                src="/images/logo-nova.png"
                 alt="Logo Óticas Vizz"
                 width={128}
                 height={128}
@@ -41,14 +41,14 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-lg text-gray-500 mb-6 relative">
+            <h4 className="text-lg text-white mb-6 relative">
               Navegação
               <span className="absolute -bottom-2 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 w-10 h-0.5 bg-yellow-400 rounded-full"></span>
             </h4>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-gray-400 hover:text-yellow-400 hover:pl-1 transition-all duration-300">
+                  <Link href={link.href} className="text-white hover:text-yellow-400 hover:pl-1 transition-all duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -57,7 +57,7 @@ export function Footer() {
           </div>
 
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="text-lg text-gray-500 mb-6 relative">
+            <h4 className="text-lg text-white mb-6 relative">
               Contato
                <span className="absolute -bottom-2 left-1/2 md:left-0 -translate-x-1/2 md:translate-x-0 w-10 h-0.5 bg-yellow-400 rounded-full"></span>
             </h4>
@@ -87,7 +87,7 @@ export function Footer() {
         <div className="mt-12 border-t border-gray-200 py-6 flex flex-col md:flex-row justify-between items-center text-center gap-4 text-sm">
           <p>&copy; {new Date().getFullYear()} Ótica Vizz. Todos os direitos reservados.</p>
           <a href="https://portfolio-wilker-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300">
-            Desenvolvido por Wilker Martins
+            Desenvolvido por <span className="font-bold text-green-400">Wilker Martins</span>
           </a>
         </div>
       </div>

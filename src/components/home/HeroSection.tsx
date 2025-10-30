@@ -81,7 +81,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative flex flex-col lg:flex-row items-center justify-center min-h-screen px-4 pt-16 text-gray-100 overflow-hidden max-w-[1600px] mx-auto">
+    <section className="relative flex flex-col lg:flex-row items-center justify-center min-h-screen lg:min-h-[92vh] px-4 pt-16 text-gray-100 overflow-hidden max-w-[1600px] mx-auto">
       {/* NOVO: CAROUSEL DE IMAGENS */}
       <Filtro/>
       <div className="absolute inset-0 z-0 h-full w-full overflow-hidden">
@@ -188,8 +188,6 @@ export function HeroSection() {
       <div className="absolute bottom-0 lg:bottom-1/4 lg:-translate-y-1/4 rounded-lg  lg:right-4 w-[90%] lg:w-[30rem] h-[19rem] mb-6 lg:mb-0 z-10">
         <p><PromotionalCarousel/></p>
       </div>
-
-      <FeatureBar/>
     </section>
   );
 }

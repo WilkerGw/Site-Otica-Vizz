@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       {/* Aplique a classe da fonte Poppins ao body */}
-      <body className={`${poppins.className} bg-white flex flex-col min-h-full`}>
+      <body className={`${poppins.className} bg-black flex flex-col min-h-full`}>
         <div className="flex flex-col flex-grow">
           <Header />
           <main>{children}</main>
