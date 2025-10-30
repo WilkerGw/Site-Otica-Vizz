@@ -36,7 +36,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed max-w-xs">
-              Cuidando da sua visão com tecnologia, estilo e um preço justo.
+              Cuidando da sua visão com garantia, estilo e preço justo.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-gray-200 py-6 flex flex-col md:flex-row justify-between items-center text-center gap-4 text-sm">
           <p>&copy; {new Date().getFullYear()} Ótica Vizz. Todos os direitos reservados.</p>
-          <a href="https://portfolio-wilker-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300">
+          <a href="https://portfolio-front-tau-flax.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300">
             Desenvolvido por <span className="font-bold text-green-400">Wilker Martins</span>
           </a>
         </div>
