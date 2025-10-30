@@ -19,7 +19,20 @@ type SubmenuImage = {
   target?: string; 
 };
 
-const menuItems = [
+// ✅ NOVO TIPO: Definindo a estrutura completa para um item de menu
+type MenuItem = {
+  label: string;
+  href: string;
+  target?: string;
+  isFeatured?: boolean; // Adicionado para corrigir o erro de build
+  submenu?: {
+    links: SubmenuLink[];
+    images: SubmenuImage[];
+  };
+};
+
+// ✅ APLICANDO O NOVO TIPO: Adicionei ": MenuItem[]"
+const menuItems: MenuItem[] = [
   {
     label: "Armações",
     href: "https://oticasvizz.lojavirtualnuvem.com.br/armacoes/",
@@ -46,7 +59,7 @@ const menuItems = [
           href: "https://oticasvizz.lojavirtualnuvem.com.br/armacoes/balgriff/",
           target: "_blank",
         },
-      ] as SubmenuLink[], // Aplicando o tipo
+      ] as SubmenuLink[],
       images: [
         {
           src: "/images/menu-imgs/grau.png",
@@ -54,7 +67,7 @@ const menuItems = [
           href: "https://oticasvizz.lojavirtualnuvem.com.br/armacoes/",
           target: "_blank",
         },
-      ] as SubmenuImage[], // Aplicando o tipo
+      ] as SubmenuImage[],
     },
   },
   {
@@ -83,7 +96,7 @@ const menuItems = [
           href: "https://oticasvizz.lojavirtualnuvem.com.br/armacoes/balgriff/",
           target: "_blank",
         },
-      ] as SubmenuLink[], // Aplicando o tipo
+      ] as SubmenuLink[],
       images: [
         {
           src: "/images/menu-imgs/sol.png",
@@ -91,7 +104,7 @@ const menuItems = [
           href: "https://oticasvizz.lojavirtualnuvem.com.br/armacoes/",
           target: "_blank",
         },
-      ] as SubmenuImage[], // Aplicando o tipo
+      ] as SubmenuImage[],
     },
   },
   {
@@ -109,14 +122,14 @@ const menuItems = [
           href: "#lentes",
           target: "_blank",
         },
-      ] as SubmenuLink[], // Aplicando o tipo
+      ] as SubmenuLink[],
       images: [
         {
           src: "/images/menu-imgs/lente.png",
           alt: "Lentes de Contato",
           href: "/#",
         },
-      ] as SubmenuImage[], // Aplicando o tipo
+      ] as SubmenuImage[],
     },
   },
   {
@@ -198,7 +211,7 @@ export function Header() {
           ))}
         </div>
 
-        <div className="md:hidden flex items-center  bg-gray-950/70 backdrop-blur-[1px] p-2 rounded-lg">
+        <div className="md:hidden flex items-center bg-gray-950/70 backdrop-blur-[1px] p-2 rounded-lg">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Menu">
             {isMenuOpen ? (
               <X size={28} className="text-gray-100" />
