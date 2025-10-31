@@ -42,7 +42,7 @@ export function HeroSection() {
   const socialLinks = [
     {
       name: "Instagram",
-      href: "https://www.instagram.com/vizzotica/",
+      href: "https://www.instagram.com/oticasvizz/",
       icon: Instagram,
     },
     {
@@ -155,7 +155,7 @@ export function HeroSection() {
             href="https://wa.me/551123628799"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full max-w-sm md:w-auto justify-center px-6 py-3 rounded-xl border-2 border-gray-500/20 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-black hover:border-gray-30 backdrop-blur-[5px]"
+            className="flex items-center gap-4 w-full max-w-sm md:w-auto justify-center px-6 py-3 rounded-xl border-2 border-gray-500/20 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl bg-black/50 hover:bg-black hover:border-gray-30 backdrop-blur-[5px]"
           >
             <div className="absolute top-0 -left-full h-full w-3/4 skew-x-[-25deg] transition-all duration-700 group-hover:left-full"></div>
             <ClipboardList size={24} className="text-yellow-400" />
@@ -173,7 +173,7 @@ export function HeroSection() {
           <Link
             href="https://oticasvizz.lojavirtualnuvem.com.br/"
             target="_blank"
-            className="flex items-center gap-4 w-full max-w-sm md:w-auto justify-center px-6 py-3 rounded-xl border-2 border-gray-500/20 text-gray-500 font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-black hover:border-gray-30 backdrop-blur-[5px]"
+            className="flex items-center gap-4 w-full max-w-sm md:w-auto justify-center px-6 py-3 rounded-xl border-2 border-gray-500/20 text-gray-500 font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl bg-black/50 hover:bg-black hover:border-gray-30 backdrop-blur-[5px]"
           >
             <Calendar size={24} className="text-yellow-400" />
             <div className="flex flex-col items-start text-left text-white">

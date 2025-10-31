@@ -4,7 +4,6 @@ import React from "react";
 // CORREÇÃO: Importando o tipo 'Variants' do framer-motion
 import { motion, Variants } from "framer-motion";
 import { Eye, Wrench, UserCheck } from "lucide-react";
-import FeatureBar from "./FeatureBar";
 
 // Array com os dados dos serviços para facilitar a manutenção
 const servicos = [
@@ -88,7 +87,6 @@ export default function ServicosSection() {
           ))}
         </motion.div>
       </div>
-      <FeatureBar/>
     </section>
   );
 };

@@ -199,7 +199,7 @@ export function Header() {
                 target={item.target}
                 rel={item.target ? "noopener noreferrer" : undefined}
                 className={`
-                  text-sm font-light text-gray-100 transition-all duration-300
+                  text-md font-light text-white transition-all duration-300
                   hover:text-yellow-500
                   ${activeSubmenu === item.label ? "text-yellow-500 font-semibold" : ""}
                   ${item.isFeatured ? "font-bold text-yellow-500" : ""}
@@ -229,12 +229,12 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 w-full bg-gray-950/70 backdrop-blur-[1px] shadow-lg border-t border-gray-100"
+            className="absolute bg-gray-950/70 top-full left-0 w-full backdrop-blur-[1px] shadow-lg border-t border-gray-100 flex justify-end"
             onMouseEnter={() => handleMouseEnter(activeSubmenu)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="container mx-auto px-8 py-6 flex justify-center items-center">
-              <div className="flex items-center gap-16">
+            <div className="container py-6 flex justify-end items-center">
+              <div className="flex items-center gap-16 mr-6">
                 <div>
                   <ul className="space-y-4">
                     {menuItems
@@ -243,7 +243,7 @@ export function Header() {
                         <li key={link.label}>
                           <Link
                             href={link.href}
-                            className="relative group text-gray-500 hover:text-yellow-500 transition-colors duration-200 text-lg whitespace-nowrap"
+                            className="relative group text-white text-sm hover:text-yellow-500 transition-colors duration-200 whitespace-nowrap"
                             target={link.target}
                             rel={
                               link.target ? "noopener noreferrer" : undefined
@@ -294,7 +294,7 @@ export function Header() {
               rel={target ? "noopener noreferrer" : undefined}
               onClick={() => setIsMenuOpen(false)}
               className={`
-                text-lg text-white transition-colors duration-300
+                text-md text-white transition-colors duration-300
                 hover:text-yellow-500 text-center
                 ${isFeatured ? "font-bold text-yellow-500" : ""}
               `}

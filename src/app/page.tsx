@@ -16,6 +16,7 @@ export default function Home() {
       <FeatureBar/>
       <Destaque />
       <ServicosSection />
+      <FeatureBar/>
       <ProdutosSection />
       <LensTypesSection />
       <LentesFotossensiveisSection
